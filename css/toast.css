@@ -1,0 +1,125 @@
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 100;
+    bottom: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2s;
+    animation: fadein 0.5s, fadeout 0.5s 2s;
+}
+
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 8%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 8%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 8%;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 8%;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+#snackbar div.alert {
+    width: 25%;
+}
+
+@media (max-width: 1670px) {
+    #snackbar div.alert {
+        width: 27%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #snackbar div.alert {
+        width: 30%;
+    }
+}
+
+@media (max-width: 930px) {
+    #snackbar div.alert {
+        width: 44%;
+    }
+}
+
+@media (max-width: 900px) {
+    #snackbar div.alert {
+        width: 38%;
+    }
+}
+
+@media (max-width: 763px) {
+    #snackbar div.alert {
+        width: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    #snackbar div.alert {
+        width: 60%;
+    }
+}
+
+@media (max-width: 400px) {
+    #snackbar div.alert {
+        width: 85%;
+    }
+}
+
+@media (max-width: 300px) {
+    #snackbar div.alert {
+        width: 90%;
+    }
+}

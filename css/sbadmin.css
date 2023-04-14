@@ -1,0 +1,105 @@
+.img-style {
+    cursor: pointer;
+    border-radius: 0.3rem;
+    font-family: sans-serif;
+    padding: 0.5rem;
+    color: white;
+    background-color: #581D22;
+    display: inline-block;
+    border-radius: 4px;
+    width: 156px;
+}
+
+@media (max-width: 768px) {
+    .img-res {
+        width: 145px;
+    }
+    #div-historico-posse {
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 467px) {
+    .font {
+        font-size: 14px;
+    }
+    .max-width {
+        max-width: 100% !important;
+    }
+    .card-header {
+        display: flow-root !important;
+    }
+    .btn-add {
+        float: none !important;
+    }
+}
+
+.box {
+    padding: 0 5%;
+    color: black;
+}
+
+.img-logo-imp {
+    width: 20%;
+}
+
+.img-preview {
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.div-img-preview:hover {
+    opacity: 0.7;
+}
+
+.div-img-preview {
+    width: 13%;
+    display: flex;
+    align-items: center;
+}
+
+.icon-img-preview {
+    display: none;
+    position: absolute !important;
+    font-size: 4rem !important;
+    color: #d3d3d3 !important;
+    left: 35px !important;
+    cursor: pointer;
+}
+
+.div-img-preview:hover .icon-img-preview {
+    display: block !important;
+}
+
+.p-imp {
+    font-size: 1.2rem;
+}
+
+.hr-assinatura {
+    border-top: none !important;
+    border-bottom: 1px solid rgb(0 0 0) !important;
+    width: 30%;
+    margin-bottom: 0 !important;
+}
+
+.div-duas-assinaturas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hr-assinatura-dupla {
+    border-top: none !important;
+    border-bottom: 1px solid rgb(0 0 0) !important;
+    width: 60%;
+    margin-bottom: 0 !important;
+}
+
+.div-assinatura {
+    width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
